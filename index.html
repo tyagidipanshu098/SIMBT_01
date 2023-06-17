@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/91d5dfa1bc.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 <body onload = "myFunction()">
     <div id="header">
@@ -28,8 +28,7 @@
              </nav>
              <div class="header-text">
                 <p id="p1">Full Stack Web Developer</p>
-                <h1 id="namee">Hi, I'm <span>Divyansh</span>Tyagi
-                </h1>
+                <h1 id="namee">Hi, I'm <span>Divyansh</span> Tyagi</h1>
              </div>
         </div>
     </div>
@@ -60,12 +59,12 @@
                         <ul>
                             <li><span>UI/UX</span><br>Figma<br>Canva</li>
                             <li><span>Front-end Web Development</span><br>HTML5<br>CSS3<br>JavaScript<br>Bootstrap<br>React.js</li>
-                            <li><span>Back-end Web Development</span><br>Node.js<br>MongoDB<br>Express</li>
+                            <li><span>Back-end Web Development</span><br>Node.js<br>Express<br>MongoDB</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experiences">
                         <ul>
-                            <li><span>Internships</span><br>Oasis Infobyte<br>Code clause</li>
+                            <li><span>Internships</span><br>Oasis Infobyte<br>Code clause<br>Simplbyte<br>IBM Skillshare</li>
                             <li><span>Projects</span><br>E-Commerce website<br>Spotify Front-end<br>Face login authentication website<br>Pdf to Word converter website<br>Pet adopt portal<br>Weather application<br>To-do web application<br>Calculator</li>
                             
                         </ul>
@@ -96,7 +95,7 @@
                 <p>As an expert UI/UX designer, I possess a unique combination of skills that allows me to create compelling digital experiences that engage and delight users. I have deep understanding of user needs and behavior, as well as my mastery of design principles and tools, enable me to craft intuitive interfaces that are both functional and visually appealing. </p>
                 <a href="#">Learn more</a>
             </div>
-            <div>
+            <div id="service2">
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
                 <p>As an expert web designer, I possess a wealth of knowledge and skills that allow me to create dynamic and engaging websites that captivate users and drive results. My mastery of design principles, coding languages, and content management systems enables me to seamlessly blend form and function, creating visually stunning websites that are also easy to use and navigate.</p>
@@ -126,7 +125,7 @@
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work" id="work2">
                     <img src="images/pic11.jpg">
                     <div class="layer">
                         <h3>Music App</h3>
@@ -143,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="#" class="btn" id="seemorebtn">See more</a>
         </div>
     </div>
     <!--contact------------------------->
@@ -252,9 +251,12 @@
         const works = document.querySelector(".work-list");
         const contact = document.querySelector(".contact-left");
         const service1 = document.querySelector("#service1");
+        const service2 = document.querySelector("#service2");
         const service3 = document.querySelector("#service3");
         const work1 = document.querySelector("#work1");
+        const work2 = document.querySelector("#work2");
         const work3 = document.querySelector("#work3");
+        const seemore = document.querySelector("#seemorebtn");
         const t1 = document.querySelector("#t1");
         const t2 = document.querySelector("#t2");
         const socialIcons = document.querySelector(".social-icons");
@@ -266,32 +268,38 @@
         window.onscroll = function() {myFunction2()};
         
         function myFunction2() {
-          if (document.documentElement.scrollTop > aboutimg.scrollTop + 200) {
-            aboutimg.style.transform = "translateX(0)";
+          if (document.documentElement.scrollTop > aboutimg.scrollTop + 400) {
+            aboutimg.style.transform = "translateY(0)";
             aboutimg.style.opacity = "100%";
-            aboutcol2.style.transform = "translateX(0)";
+            aboutcol2.style.transform = "translateY(0)";
             aboutcol2.style.opacity = "100%";
 
           }
             
-          if (document.documentElement.scrollTop > services.scrollTop + 900) {
-            service1.style.transform = "translateX(0)";
+          if (document.documentElement.scrollTop > services.scrollTop + 1200) {
+            service1.style.transform = "translateY(0)";
             service1.style.opacity = "100%";
-            service3.style.transform = "translateX(0)";
+            service2.style.transform = "translateY(0)";
+            service2.style.opacity = "100%";
+            service3.style.transform = "translateY(0)";
             service3.style.opacity = "100%";
           }
 
-          if (document.documentElement.scrollTop > works.scrollTop + 1600) {
-            work1.style.transform = "translateX(0)";
+          if (document.documentElement.scrollTop > works.scrollTop + 2000) {
+            work1.style.transform = "translateY(0)";
             work1.style.opacity = "100%";
-            work3.style.transform = "translateX(0)";
+            work2.style.transform = "translateY(0)";
+            work2.style.opacity = "100%";
+            work3.style.transform = "translateY(0)";
             work3.style.opacity = "100%";
+            seemore.style.transform = "translateY(0)";
+            seemore.style.opacity = "100%";
           }
           
-          if (document.documentElement.scrollTop > contact.scrollTop + 2200) {
-            t1.style.transform = "translateX(0)";
+          if (document.documentElement.scrollTop > contact.scrollTop + 2600) {
+            t1.style.transform = "translateY(0)";
             t1.style.opacity = "100%";
-            t2.style.transform = "translateX(0)";
+            t2.style.transform = "translateY(0)";
             t2.style.opacity = "100%";
             socialIcons.style.transform = "translateY(0)"
             socialIcons.style.opacity = "100%";
@@ -299,12 +307,12 @@
             cvbtn.style.opacity = "100%";
             copyright.style.transform = "translateY(0)";
             copyright.style.opacity = "100%";
-            contactRight.style.transform = "translateX(0)";
+            contactRight.style.transform = "translateY(0)";
             contactRight.style.opacity = "100%";
 
         }
     }
       </script>
-      
+
 </body>
 </html>
