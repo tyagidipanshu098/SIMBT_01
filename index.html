@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Divyansh Tyagi</title>
+    <script src="https://kit.fontawesome.com/91d5dfa1bc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body onload = "myFunction()">
+    <div id="header">
+        <div class="container">
+             <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                <p id="p1">Full Stack Web Developer</p>
+                <h1 id="namee">Hi, I'm <span>Divyansh</span>Tyagi
+                </h1>
+             </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------About-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic10.jpg" id="aboutimg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello, I am a skilled web developer with expertise in building responsive and
+                        scalable web applications using modern front-end and back-end
+                        technologies. In addition, I possess strong knowledge of C++ data
+                        structures and algorithms, which enables me to write efficient and
+                        optimized code.
+                        </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents  active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Figma<br>Canva</li>
+                            <li><span>Front-end Web Development</span><br>HTML5<br>CSS3<br>JavaScript<br>Bootstrap<br>React.js</li>
+                            <li><span>Back-end Web Development</span><br>Node.js<br>MongoDB<br>Express</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Internships</span><br>Oasis Infobyte<br>Code clause</li>
+                            <li><span>Projects</span><br>E-Commerce website<br>Spotify Front-end<br>Face login authentication website<br>Pdf to Word converter website<br>Pet adopt portal<br>Weather application<br>To-do web application<br>Calculator</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College</span><br>KIET Group of Institutions, Ghaziabad</li>
+                            <li><span>Degree</span><br>Bachelor of Technology</li>
+                            <li><span>Course</span><br>Electronics & Communications Engineering</li>
+                            <li><span>Certifications</span><br>Complete web development by Programming Hero<br>Web development from scratch by Eduonix</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--services------------------------------------------>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div id="service1">
+                
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>As an expert UI/UX designer, I possess a unique combination of skills that allows me to create compelling digital experiences that engage and delight users. I have deep understanding of user needs and behavior, as well as my mastery of design principles and tools, enable me to craft intuitive interfaces that are both functional and visually appealing. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>As an expert web designer, I possess a wealth of knowledge and skills that allow me to create dynamic and engaging websites that captivate users and drive results. My mastery of design principles, coding languages, and content management systems enables me to seamlessly blend form and function, creating visually stunning websites that are also easy to use and navigate.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div id="service3">
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Full Stack Web Development</h2>
+                <p>As an expert full-stack web developer, I possess a comprehensive set of skills and knowledge that allow me to build robust and dynamic web applications that can handle complex data processing and user interactions. My proficiency in both front-end and back-end technologies, including HTML, CSS, JavaScript, databases, server-side scripting languages, and web frameworks, enables me to create seamless and intuitive digital experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--portfolio ------------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work" id="work1">
+                    <img src="images/pic13.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Developed a full-fledged Youtube clone.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pic11.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Developed a Spotify clone.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" id="work3">
+                    <img src="images/pic12.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Developed an E-Commerce Website.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--contact------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p id="t1"><i class="fa-solid fa-paper-plane"></i>tyagidipanshu098@</p>
+                    <p id="t2"><i class="fa-solid fa-square-phone"></i>+916397018308</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/divyansh.tyagi.733450/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Divyans18342818" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/tyagi_divyansh_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/divyansh-tyagi-87286b222/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="CV_Divyansh_Tyagi.pdf" target="_blank" download class="btn btn2" id="cvbtn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+           <p>Copyright @ Divyansh. Made with <i class="fa-solid fa-heart"></i> by Divyansh Tyagi</p>
+    </div>
+
+
+
+
+
+
+    <script>
+
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+     }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby8YOpkAgNj2OaSPDObSU5zq9a9x7srZPQPg7qori7iMfU2QYMI_UwYn3TWqRNiyrow/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        const logo = document.querySelector(".logo");
+        const name = document.getElementById("namee");
+        const p1 = document.getElementById("p1");
+        const header = document.getElementById("header");
+        function myFunction(){
+                name.style.opacity = "100%";
+                name.style.transition = "1.5s"; 
+                name.style.transform = "translateY(0px)"; 
+                p1.style.transform = "translateY(0px)";
+                p1.style.opacity = "100%";
+                logo.style.transform = "translateX(0px)";
+                logo.style.opacity = "100%";
+        }
+      </script>
+
+      <script>
+        const aboutimg = document.querySelector("#aboutimg");
+        const aboutcol2 = document.querySelector(".about-col-2");
+        const services = document.querySelector(".services-list");
+        const works = document.querySelector(".work-list");
+        const contact = document.querySelector(".contact-left");
+        const service1 = document.querySelector("#service1");
+        const service3 = document.querySelector("#service3");
+        const work1 = document.querySelector("#work1");
+        const work3 = document.querySelector("#work3");
+        const t1 = document.querySelector("#t1");
+        const t2 = document.querySelector("#t2");
+        const socialIcons = document.querySelector(".social-icons");
+        const cvbtn = document.querySelector("#cvbtn");
+        const copyright = document.querySelector(".copyright");
+        const contactRight = document.querySelector(".contact-right");
+        
+
+        window.onscroll = function() {myFunction2()};
+        
+        function myFunction2() {
+          if (document.documentElement.scrollTop > aboutimg.scrollTop + 200) {
+            aboutimg.style.transform = "translateX(0)";
+            aboutimg.style.opacity = "100%";
+            aboutcol2.style.transform = "translateX(0)";
+            aboutcol2.style.opacity = "100%";
+
+          }
+            
+          if (document.documentElement.scrollTop > services.scrollTop + 900) {
+            service1.style.transform = "translateX(0)";
+            service1.style.opacity = "100%";
+            service3.style.transform = "translateX(0)";
+            service3.style.opacity = "100%";
+          }
+
+          if (document.documentElement.scrollTop > works.scrollTop + 1600) {
+            work1.style.transform = "translateX(0)";
+            work1.style.opacity = "100%";
+            work3.style.transform = "translateX(0)";
+            work3.style.opacity = "100%";
+          }
+          
+          if (document.documentElement.scrollTop > contact.scrollTop + 2200) {
+            t1.style.transform = "translateX(0)";
+            t1.style.opacity = "100%";
+            t2.style.transform = "translateX(0)";
+            t2.style.opacity = "100%";
+            socialIcons.style.transform = "translateY(0)"
+            socialIcons.style.opacity = "100%";
+            cvbtn.style.transform = "translateY(0)";
+            cvbtn.style.opacity = "100%";
+            copyright.style.transform = "translateY(0)";
+            copyright.style.opacity = "100%";
+            contactRight.style.transform = "translateX(0)";
+            contactRight.style.opacity = "100%";
+
+        }
+    }
+      </script>
+      
+</body>
+</html>
