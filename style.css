@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
-    font-family: 'Quicksand', sans-serif;
 }
 body{
     background: #000000;
@@ -64,6 +63,7 @@ nav ul li a:hover::after{
     font-size: 30px;
 
 }
+
 #p1{
     transform: translateY(100px);
     transition: 1.5s;
@@ -96,7 +96,7 @@ nav ul li a:hover::after{
     color: #ababab;
 }
 #aboutimg{
-    transform: translateX(-100px);
+    transform: translateY(100px);
     transition: 1s;
     opacity: 0;
 }
@@ -115,7 +115,7 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
-    transform: translateX(100px);
+    transform: translateY(100px);
     transition: 1s;
     opacity: 0;
 }
@@ -182,12 +182,17 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 #service1{
-    transform: translate(-100px);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
+#service2{
+    transform: translateY(100px);
     opacity: 0;
     transition: 1s;
 }
 #service3{
-    transform: translate(100px);
+    transform: translateY(100px);
     opacity: 0;
     transition: 1s;
 }
@@ -234,15 +239,20 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    border: 3px solid grey;
+    border: 1px solid grey;
 }
 #work1{
-    transform: translateX(-100px);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
+#work2{
+    transform: translateY(100px);
     opacity: 0;
     transition: 1s;
 }
 #work3{
-    transform: translateX(100px);
+    transform: translateY(100px);
     opacity: 0;
     transition: 1s;
 }
@@ -310,6 +320,11 @@ nav ul li a:hover::after{
     background: #ff004f;
 
 }
+#seemorebtn{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
 
 /*-----------contact--------*/
 .contact-left{
@@ -330,12 +345,12 @@ nav ul li a:hover::after{
     font-size: 25px;
  }
  #t1{
-    transform: translateX(-100px);
+    transform: translateY(100px);
     opacity: 0;
     transition: 1s;
  }
  #t2{
-    transform: translateX(-100px);
+    transform: translateY(100px);
     opacity: 0;
     transition: 1s;
  }
@@ -367,7 +382,7 @@ nav ul li a:hover::after{
     transition: 1s;
  }
  .contact-right{
-    transform: translateX(100px);
+    transform: translateY(100px);
     opacity: 0;
     transition: 1s;
  }
